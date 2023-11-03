@@ -1,0 +1,11 @@
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\bin\Debug\net7.0\OnlineShopOrders.Infrastructure.Persistence.deps.json
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\bin\Debug\net7.0\OnlineShopOrders.Infrastructure.Persistence.dll
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\bin\Debug\net7.0\OnlineShopOrders.Infrastructure.Persistence.pdb
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Persistence.AssemblyInfoInputs.cache
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Persistence.AssemblyInfo.cs
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Persistence.dll
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\obj\Debug\net7.0\refint\OnlineShopOrders.Infrastructure.Persistence.dll
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Persistence.pdb
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\obj\Debug\net7.0\ref\OnlineShopOrders.Infrastructure.Persistence.dll

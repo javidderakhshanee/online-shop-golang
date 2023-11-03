@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{0D6D9D4A-0618-459F-A04A-C30FAB357EC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.Domain", "core\OnlineShopOrders.Domain\OnlineShopOrders.Domain.csproj", "{43C24D4B-674B-4CB7-8684-628EE10FD72D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.ApplicationService", "core\OnlineShopOrders.ApplicationService\OnlineShopOrders.ApplicationService.csproj", "{A760CD45-C22D-4DDF-8BC1-75F7CD2B00D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "endpoint", "endpoint", "{23837F97-8EC5-4C5C-8B7D-3126ED521633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.EndPoint.WebApi", "endpoint\OnlineShopOrders.EndPoint.WebApi\OnlineShopOrders.EndPoint.WebApi.csproj", "{6D66DC8C-A666-4D7D-8DCE-4C4184E27F03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastrcutre", "Infrastrcutre", "{22850AB9-1940-48B4-9806-390275C34136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.Infrastrcuture.Configuration", "Infrastrcutre\OnlineShopOrders.Infrastrcuture.Configuration\OnlineShopOrders.Infrastrcuture.Configuration.csproj", "{F79A2E36-A6F9-423B-9275-B1799611071E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.Infrastructure.Persistence", "Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\OnlineShopOrders.Infrastructure.Persistence.csproj", "{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43C24D4B-674B-4CB7-8684-628EE10FD72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C24D4B-674B-4CB7-8684-628EE10FD72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C24D4B-674B-4CB7-8684-628EE10FD72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C24D4B-674B-4CB7-8684-628EE10FD72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A760CD45-C22D-4DDF-8BC1-75F7CD2B00D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A760CD45-C22D-4DDF-8BC1-75F7CD2B00D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A760CD45-C22D-4DDF-8BC1-75F7CD2B00D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A760CD45-C22D-4DDF-8BC1-75F7CD2B00D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D66DC8C-A666-4D7D-8DCE-4C4184E27F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D66DC8C-A666-4D7D-8DCE-4C4184E27F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D66DC8C-A666-4D7D-8DCE-4C4184E27F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D66DC8C-A666-4D7D-8DCE-4C4184E27F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79A2E36-A6F9-423B-9275-B1799611071E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79A2E36-A6F9-423B-9275-B1799611071E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79A2E36-A6F9-423B-9275-B1799611071E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79A2E36-A6F9-423B-9275-B1799611071E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43C24D4B-674B-4CB7-8684-628EE10FD72D} = {0D6D9D4A-0618-459F-A04A-C30FAB357EC3}
+		{A760CD45-C22D-4DDF-8BC1-75F7CD2B00D2} = {0D6D9D4A-0618-459F-A04A-C30FAB357EC3}
+		{6D66DC8C-A666-4D7D-8DCE-4C4184E27F03} = {23837F97-8EC5-4C5C-8B7D-3126ED521633}
+		{F79A2E36-A6F9-423B-9275-B1799611071E} = {22850AB9-1940-48B4-9806-390275C34136}
+		{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09} = {22850AB9-1940-48B4-9806-390275C34136}
+	EndGlobalSection
+EndGlobal

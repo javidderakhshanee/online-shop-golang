@@ -1,0 +1,11 @@
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\bin\Debug\net7.0\OnlineShopOrders.ApplicationService.deps.json
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\bin\Debug\net7.0\OnlineShopOrders.ApplicationService.dll
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\bin\Debug\net7.0\OnlineShopOrders.ApplicationService.pdb
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\obj\Debug\net7.0\OnlineShopOrders.ApplicationService.GeneratedMSBuildEditorConfig.editorconfig
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\obj\Debug\net7.0\OnlineShopOrders.ApplicationService.AssemblyInfoInputs.cache
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\obj\Debug\net7.0\OnlineShopOrders.ApplicationService.AssemblyInfo.cs
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\obj\Debug\net7.0\OnlineShopOrders.ApplicationService.csproj.CoreCompileInputs.cache
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\obj\Debug\net7.0\OnlineShopOrders.ApplicationService.dll
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\obj\Debug\net7.0\refint\OnlineShopOrders.ApplicationService.dll
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\obj\Debug\net7.0\OnlineShopOrders.ApplicationService.pdb
+D:\online-shop-golang-dotnet\order-dotnet\OnlineShopOrders\core\OnlineShopOrders.ApplicationService\obj\Debug\net7.0\ref\OnlineShopOrders.ApplicationService.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aTiDxoAIz8g25N4/RzTE1jHCtanVLM203/zzt7KI+Hs=",
+  "Source": "OnlineShopOrders.EndPoint.WebApi",
+  "BasePath": "_content/OnlineShopOrders.EndPoint.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
