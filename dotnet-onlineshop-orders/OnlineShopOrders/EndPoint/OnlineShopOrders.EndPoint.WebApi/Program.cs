@@ -29,6 +29,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseRateLimiting();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -40,7 +42,6 @@ app.UseMiddleware<CustomExceptionHandlerMiddleware>();
 app.UseAuthorization();
 
 app.MapControllers();
-app.UseRateLimiting();
 
 app.MapHealthChecks("/hc", new HealthCheckOptions
 {
