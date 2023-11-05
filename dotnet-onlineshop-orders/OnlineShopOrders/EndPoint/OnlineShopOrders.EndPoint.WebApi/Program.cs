@@ -5,12 +5,14 @@ using OnlineShopOrders.Infrastructure.Persistence;
 using OnlineShopOrders.Logger;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using OnlineShopOrders.EndPoint;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHealthChecks();
 
 builder.Services       
+       .AddRateLimiting(builder.Configuration)
        .AddCustomLogger()
        .AddApplicationService()
        .AddPersistence();
@@ -38,6 +40,7 @@ app.UseMiddleware<CustomExceptionHandlerMiddleware>();
 app.UseAuthorization();
 
 app.MapControllers();
+app.UseRateLimiting();
 
 app.MapHealthChecks("/hc", new HealthCheckOptions
 {
