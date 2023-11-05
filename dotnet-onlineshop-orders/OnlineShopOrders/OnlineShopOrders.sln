@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "endpoint", "endpoint", "{23
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.EndPoint.WebApi", "endpoint\OnlineShopOrders.EndPoint.WebApi\OnlineShopOrders.EndPoint.WebApi.csproj", "{6D66DC8C-A666-4D7D-8DCE-4C4184E27F03}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastrcutre", "Infrastrcutre", "{22850AB9-1940-48B4-9806-390275C34136}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{22850AB9-1940-48B4-9806-390275C34136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.Infrastrcuture.Configuration", "Infrastrcutre\OnlineShopOrders.Infrastrcuture.Configuration\OnlineShopOrders.Infrastrcuture.Configuration.csproj", "{F79A2E36-A6F9-423B-9275-B1799611071E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.Infrastructure.Configuration", "Infrastructure\OnlineShopOrders.Infrastructure.Configuration\OnlineShopOrders.Infrastructure.Configuration.csproj", "{F79A2E36-A6F9-423B-9275-B1799611071E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.Infrastructure.Persistence", "Infrastrcutre\OnlineShopOrders.Infrastructure.Persistence\OnlineShopOrders.Infrastructure.Persistence.csproj", "{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.Infrastructure.Persistence", "Infrastructure\OnlineShopOrders.Infrastructure.Persistence\OnlineShopOrders.Infrastructure.Persistence.csproj", "{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

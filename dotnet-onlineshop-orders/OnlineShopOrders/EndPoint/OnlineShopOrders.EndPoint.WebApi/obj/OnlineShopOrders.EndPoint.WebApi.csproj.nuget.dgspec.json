@@ -1,17 +1,93 @@
 {
   "format": 1,
   "restore": {
-    "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\OnlineShopOrders.EndPoint.WebApi.csproj": {}
+    "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\OnlineShopOrders.EndPoint.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\OnlineShopOrders.EndPoint.WebApi.csproj": {
+    "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.ApplicationService\\OnlineShopOrders.ApplicationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\OnlineShopOrders.EndPoint.WebApi.csproj",
-        "projectName": "OnlineShopOrders.EndPoint.WebApi",
-        "projectPath": "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\OnlineShopOrders.EndPoint.WebApi.csproj",
+        "projectUniqueName": "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.ApplicationService\\OnlineShopOrders.ApplicationService.csproj",
+        "projectName": "OnlineShopOrders.ApplicationService",
+        "projectPath": "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.ApplicationService\\OnlineShopOrders.ApplicationService.csproj",
         "packagesPath": "C:\\Users\\Javid\\.nuget\\packages\\",
-        "outputPath": "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\obj\\",
+        "outputPath": "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.ApplicationService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Javid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj": {
+                "projectPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj",
+        "projectName": "OnlineShopOrders.Domain",
+        "projectPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj",
+        "packagesPath": "C:\\Users\\Javid\\.nuget\\packages\\",
+        "outputPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -47,13 +123,101 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\OnlineShopOrders.EndPoint.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\OnlineShopOrders.EndPoint.WebApi.csproj",
+        "projectName": "OnlineShopOrders.EndPoint.WebApi",
+        "projectPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\OnlineShopOrders.EndPoint.WebApi.csproj",
+        "packagesPath": "C:\\Users\\Javid\\.nuget\\packages\\",
+        "outputPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\endpoint\\OnlineShopOrders.EndPoint.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Javid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.ApplicationService\\OnlineShopOrders.ApplicationService.csproj": {
+                "projectPath": "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.ApplicationService\\OnlineShopOrders.ApplicationService.csproj"
+              },
+              "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Configuration\\OnlineShopOrders.Infrastructure.Configuration.csproj": {
+                "projectPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Configuration\\OnlineShopOrders.Infrastructure.Configuration.csproj"
+              },
+              "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Persistence\\OnlineShopOrders.Infrastructure.Persistence.csproj": {
+                "projectPath": "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Persistence\\OnlineShopOrders.Infrastructure.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.13, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "fluentvalidation": {
+              "target": "Package",
+              "version": "[11.8.0, )"
             }
           },
           "imports": [
@@ -71,6 +235,151 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Configuration\\OnlineShopOrders.Infrastructure.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Configuration\\OnlineShopOrders.Infrastructure.Configuration.csproj",
+        "projectName": "OnlineShopOrders.Infrastructure.Configuration",
+        "projectPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Configuration\\OnlineShopOrders.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\Javid\\.nuget\\packages\\",
+        "outputPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Javid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj": {
+                "projectPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Persistence\\OnlineShopOrders.Infrastructure.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Persistence\\OnlineShopOrders.Infrastructure.Persistence.csproj",
+        "projectName": "OnlineShopOrders.Infrastructure.Persistence",
+        "projectPath": "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Persistence\\OnlineShopOrders.Infrastructure.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Javid\\.nuget\\packages\\",
+        "outputPath": "D:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Javid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj": {
+                "projectPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj"
+              },
+              "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Configuration\\OnlineShopOrders.Infrastructure.Configuration.csproj": {
+                "projectPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Infrastructure\\OnlineShopOrders.Infrastructure.Configuration\\OnlineShopOrders.Infrastructure.Configuration.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

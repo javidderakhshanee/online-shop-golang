@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlineShopOrders.Domain
-build_property.ProjectDir = D:\online-shop-golang-dotnet\onlineshop-order-dotnet\OnlineShopOrders\core\OnlineShopOrders.Domain\
+build_property.ProjectDir = d:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Core\OnlineShopOrders.Domain\

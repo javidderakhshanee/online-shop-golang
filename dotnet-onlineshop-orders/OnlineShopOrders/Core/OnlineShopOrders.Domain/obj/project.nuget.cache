@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "8BHno5nkPPtyxwuZy0dOtk/c/jfXUinHk0x7WIPc/wl0jLSeKg5MGTrXe9LZAiPTHq32fudbUhmYeAtFnZd8kQ==",
+  "dgSpecHash": "OrqlsO94wJ0o3sFPvHgjARf7KuRHRsNUfjJcEf94ghS2XhQGGYXGXdAvbG9Eq1iwmmcAh+4aZKnGGITSqI17lw==",
   "success": true,
-  "projectFilePath": "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.13\\microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\Javid\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

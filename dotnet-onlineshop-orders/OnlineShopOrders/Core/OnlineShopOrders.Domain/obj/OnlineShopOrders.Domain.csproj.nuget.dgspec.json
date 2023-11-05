@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj": {}
+    "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj": {}
   },
   "projects": {
-    "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj": {
+    "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj",
+        "projectUniqueName": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj",
         "projectName": "OnlineShopOrders.Domain",
-        "projectPath": "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj",
+        "projectPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\OnlineShopOrders.Domain.csproj",
         "packagesPath": "C:\\Users\\Javid\\.nuget\\packages\\",
-        "outputPath": "D:\\online-shop-golang-dotnet\\onlineshop-order-dotnet\\OnlineShopOrders\\core\\OnlineShopOrders.Domain\\obj\\",
+        "outputPath": "d:\\online-shop-golang\\dotnet-onlineshop-orders\\OnlineShopOrders\\Core\\OnlineShopOrders.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -46,6 +46,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

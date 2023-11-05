@@ -1,0 +1,15 @@
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\bin\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.deps.json
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\bin\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.dll
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\bin\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.pdb
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\bin\Debug\net7.0\OnlineShopOrders.Domain.dll
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\bin\Debug\net7.0\OnlineShopOrders.Domain.pdb
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.csproj.AssemblyReference.cache
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.GeneratedMSBuildEditorConfig.editorconfig
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.AssemblyInfoInputs.cache
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.AssemblyInfo.cs
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.csproj.CoreCompileInputs.cache
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.csproj.CopyComplete
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.dll
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\refint\OnlineShopOrders.Infrastructure.Configuration.dll
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\OnlineShopOrders.Infrastructure.Configuration.pdb
+D:\online-shop-golang\dotnet-onlineshop-orders\OnlineShopOrders\Infrastructure\OnlineShopOrders.Infrastructure.Configuration\obj\Debug\net7.0\ref\OnlineShopOrders.Infrastructure.Configuration.dll

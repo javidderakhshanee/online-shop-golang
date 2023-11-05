@@ -1,25 +1,39 @@
+using Microsoft.EntityFrameworkCore;
+using OnlineShopOrders.Infrastructure.Configuration;
+using OnlineShopOrders.Core.ApplicationService;
+using OnlineShopOrders.Infrastructure.Persistence;
+using OnlineShopOrders.Logger;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services
+       .AddCustomLogger()
+       .AddApplicationService()
+       .AddPersistence();
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+ builder.Services.AddControllers();
+ builder.Services.AddDbContext<OnlineShopOrdersContext>(option =>
+        {
+            option.UseMySQL(connectionString: builder.Configuration.GetConnectionString("OnlineShopOrdersMySqlConnection"));
+            option.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+        });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseMiddleware<CustomExceptionHandlerMiddleware>();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();

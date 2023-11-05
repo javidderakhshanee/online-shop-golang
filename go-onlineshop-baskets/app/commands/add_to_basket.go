@@ -2,10 +2,9 @@ package commands
 
 import (
 	"context"
+	. "github.com/ahmetb/go-linq/v3"
 	"onlineshopbasket/config"
 	domain "onlineshopbasket/domain"
-
-	. "github.com/ahmetb/go-linq/v3"
 )
 
 type AddToBasketHandler struct {
