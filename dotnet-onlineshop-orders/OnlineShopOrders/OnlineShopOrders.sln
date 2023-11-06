@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrders.Infrastructure.Persistence", "Infrastructure\OnlineShopOrders.Infrastructure.Persistence\OnlineShopOrders.Infrastructure.Persistence.csproj", "{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{30A414A9-CFBB-4AF2-B217-A43AA63B0520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOrdersTest", "Tests\OnlineShopOrdersTest\OnlineShopOrdersTest.csproj", "{513389E6-2E4B-4728-94B1-8EBEEB355B4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,10 @@ Global
 		{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513389E6-2E4B-4728-94B1-8EBEEB355B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513389E6-2E4B-4728-94B1-8EBEEB355B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513389E6-2E4B-4728-94B1-8EBEEB355B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513389E6-2E4B-4728-94B1-8EBEEB355B4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{43C24D4B-674B-4CB7-8684-628EE10FD72D} = {0D6D9D4A-0618-459F-A04A-C30FAB357EC3}
@@ -55,5 +63,6 @@ Global
 		{6D66DC8C-A666-4D7D-8DCE-4C4184E27F03} = {23837F97-8EC5-4C5C-8B7D-3126ED521633}
 		{F79A2E36-A6F9-423B-9275-B1799611071E} = {22850AB9-1940-48B4-9806-390275C34136}
 		{7F4ECD74-D6C7-49B6-B2F4-ADE602639E09} = {22850AB9-1940-48B4-9806-390275C34136}
+		{513389E6-2E4B-4728-94B1-8EBEEB355B4D} = {30A414A9-CFBB-4AF2-B217-A43AA63B0520}
 	EndGlobalSection
 EndGlobal
