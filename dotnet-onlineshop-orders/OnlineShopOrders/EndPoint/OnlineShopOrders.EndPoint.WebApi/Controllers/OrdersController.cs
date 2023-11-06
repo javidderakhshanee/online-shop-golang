@@ -4,6 +4,7 @@ using OnlineShopOrders.Core.ApplicationService.Commands.CancelOrder;
 using OnlineShopOrders.Core.ApplicationService.Commands.SaveOrder;
 using OnlineShopOrders.Core.ApplicationService.Queries.GetOrder;
 using OnlineShopOrders.Core.ApplicationService.Queries.GetOrders;
+using OnlineShopOrders.Core.Domain;
 
 namespace OnlineShopOrders.EndPoint.WebApi.Controllers;
 
@@ -18,8 +19,10 @@ public class OrdersController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpGet("{customerId}")]
-    public  async Task<IActionResult> GetOrders(ulong customerId)
+    [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Order>))]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public  async Task<IActionResult> GetOrders([FromQuery]ulong customerId)
     {
        if(customerId==0)
          return BadRequest();
@@ -30,6 +33,8 @@ public class OrdersController : ControllerBase
     }
 
     [HttpGet("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK, Type =typeof(Order))]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetOrder(ulong id)
     {
          var order=await _mediator.Send(new GetOrderQuery(id));
@@ -38,17 +43,17 @@ public class OrdersController : ControllerBase
     }
 
     [HttpPost]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Order))]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> SaveOrder(SaveOrderCommand order)
     {
-       if(order is null)
-         return BadRequest(); 
-
        var result = await _mediator.Send(order);
 
        return Ok(result);
     }
 
     [HttpDelete("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public async Task<IActionResult> CancelOrder(ulong id)
     {
        await _mediator.Send(new CancelOrderCommand(id));

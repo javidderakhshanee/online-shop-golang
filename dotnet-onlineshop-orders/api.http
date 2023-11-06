@@ -1,0 +1,40 @@
+@hostname=localhost
+@port=5106
+@host={{hostname}}:{{port}}
+
+GET http://{{host}}/orders?customerId=1
+
+###
+
+GET http://{{host}}/orders/1
+
+
+###
+
+POST http://{{host}}/orders
+Content-Type: application/json
+Accept-Language: en-US,en;q=0.5
+
+{
+    "customerId": 1,
+    "addressId": 1,
+    "orderLines": [
+        {
+            "productId":1,
+            "productName":"Mobile",
+            "quantity":1,
+            "price":1000,            
+        },
+        {
+            "productId":2,
+            "productName":"TV",
+            "quantity":2,
+            "price":1000,            
+        }
+    ]
+}
+
+
+###
+
+DELETE http://{{host}}/orders/1
