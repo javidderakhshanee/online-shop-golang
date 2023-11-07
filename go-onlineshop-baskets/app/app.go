@@ -18,7 +18,6 @@ func NewApplication(ctx context.Context) Application {
 	return Application{
 		Commands: Commands{
 			UpdateBasket: commands.NewUpdateBasketHandler(repo),
-			AddToBasket:  commands.NewAddToBasketHandler(repo),
 			DeleteBasket: commands.NewDeleteBasketHandler(repo),
 		},
 		Queries: Queries{
@@ -33,6 +32,5 @@ type Queries struct {
 
 type Commands struct {
 	UpdateBasket commands.UpdateBasketHandler
-	AddToBasket  commands.AddToBasketHandler
 	DeleteBasket commands.DeleteBasketHandler
 }

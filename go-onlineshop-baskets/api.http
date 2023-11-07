@@ -1,0 +1,41 @@
+GET http://localhost:9001/baskets/45
+
+###
+
+GET http://localhost:9001/baskets/46
+
+###
+
+DELETE http://localhost:9001/baskets/46
+
+###
+
+PUT http://localhost:9001/baskets/46
+
+{
+    "promoCode":"7",
+	"note":"sss7",
+	"shippingAddressId":"7",
+    "billingAddressId":"7",
+	"items":
+    [
+        {
+            "productId":"7",
+	         "quantity":1
+        },
+        {
+            "productId":"8",
+	         "quantity":2
+        }
+        ,
+        {
+            "productId":"89",
+	         "quantity":5
+        }
+        ,
+        {
+            "productId":"10",
+	         "quantity":1
+        }
+    ]  
+}

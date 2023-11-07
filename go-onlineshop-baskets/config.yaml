@@ -1,6 +1,8 @@
 redis:
   connectionString: "localhost:6379"
   instanceName: "basket"
+  password : ""
+  db : 0
 
 basketRules:
   maximumItemsInBasket: 50

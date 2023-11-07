@@ -20,7 +20,6 @@ func main() {
 
 	r.HandleFunc("/baskets/{id}", c.GetBasket).Methods("GET")
 	r.HandleFunc("/baskets/{id}", c.UpdateBasket).Methods("PUT")
-	r.HandleFunc("/baskets/{id}", c.AddtoBasket).Methods("POST")
 	r.HandleFunc("/baskets/{id}", c.DeleteBasket).Methods("DELETE")
 
 	port := ":9001"

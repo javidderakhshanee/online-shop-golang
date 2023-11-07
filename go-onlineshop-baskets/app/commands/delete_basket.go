@@ -17,8 +17,8 @@ func NewDeleteBasketHandler(repo domain.Repository) DeleteBasketHandler {
 	return DeleteBasketHandler{repo}
 }
 
-func (h DeleteBasketHandler) Handle(ctx context.Context, id string, b domain.BasketHeader) error {
-	err := h.repo.DeleteBasket(ctx, id, b)
+func (h DeleteBasketHandler) Handle(ctx context.Context, id string) error {
+	err := h.repo.DeleteBasket(ctx, id)
 
 	if err != nil {
 		return err

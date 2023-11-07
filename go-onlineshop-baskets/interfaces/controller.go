@@ -24,9 +24,15 @@ func (c BasketController) GetBasket(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
 	}
 
-	b, _ := c.app.Queries.GetBasket.Handle(r.Context(), params["id"])
+	b, err := c.app.Queries.GetBasket.Handle(r.Context(), params["id"])
+
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
 
 	basketJson, _ := json.Marshal(b)
+
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(basketJson))
 }
@@ -60,39 +66,13 @@ func (c BasketController) DeleteBasket(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
 	}
 
-	var b domain.BasketHeader
+	err := c.app.Commands.DeleteBasket.Handle(r.Context(), params["id"])
 
-	err := json.NewDecoder(r.Body).Decode(&b)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
 
-	c.app.Commands.DeleteBasket.Handle(r.Context(), params["id"], b)
+	w.WriteHeader(http.StatusNoContent)
 
-	w.Header().Set("Content-Type", "application/json")
-
-	w.Write([]byte(params["id"]))
-}
-
-func (c BasketController) AddtoBasket(w http.ResponseWriter, r *http.Request) {
-	id := mux.Vars(r)["id"]
-
-	if id == "" {
-		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-	}
-
-	var item domain.BasketItem
-
-	err := json.NewDecoder(r.Body).Decode(&item)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
-		return
-	}
-
-	c.app.Commands.AddToBasket.Handle(r.Context(), id, item)
-
-	w.Header().Set("Content-Type", "application/json")
-
-	w.Write([]byte(item.ProductId))
 }

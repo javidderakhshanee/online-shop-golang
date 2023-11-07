@@ -14,6 +14,8 @@ type ConfigurationsWrapper struct {
 type RedisConfigurations struct {
 	ConnectionString string
 	InstanceName     string
+	Password         string
+	DB               int
 }
 
 type BasketRules struct {
