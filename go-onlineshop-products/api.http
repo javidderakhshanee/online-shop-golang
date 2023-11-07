@@ -1,0 +1,6 @@
+POST http://localhost:9002/products/category
+
+{
+    "Id":1,
+    "Name":"Cat1"
+}

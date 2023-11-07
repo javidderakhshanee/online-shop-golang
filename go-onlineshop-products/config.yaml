@@ -1,0 +1,2 @@
+mysql:
+  connectionString: "root:984125367Dli@@tcp(127.0.0.1:3306)/online-shop-products?charset=utf8mb4&parseTime=True&loc=Local"
