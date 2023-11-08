@@ -14,7 +14,11 @@ import (
 func addCategoryController(router *mux.Router, application app.Application) {
 	controller := controller.NewCategoryController(application)
 
+	router.HandleFunc("/products/categories", controller.GetCategories).Methods("GET")
+	router.HandleFunc("/products/category/{id}", controller.GetCategory).Methods("GET")
 	router.HandleFunc("/products/category", controller.AddCategory).Methods("POST")
+	router.HandleFunc("/products/category", controller.UpdateCategory).Methods("PUT")
+	router.HandleFunc("/products/category/{id}", controller.DeleteCategory).Methods("DELETE")
 }
 
 func main() {
@@ -25,7 +29,7 @@ func main() {
 
 	addCategoryController(router, app)
 
-	port := ":9002"
+	port := ":8001"
 
 	fmt.Println("Start listening on port", port)
 

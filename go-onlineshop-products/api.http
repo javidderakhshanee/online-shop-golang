@@ -1,6 +1,15 @@
-POST http://localhost:9002/products/category
+POST http://localhost:8001/products/category
 
 {
-    "Id":1,
-    "Name":"Cat1"
+    "id":3,
+    "name":"Cat4"
 }
+
+###
+
+GET http://localhost:8001/products/category/1
+
+
+###
+
+GET http://localhost:8001/products/categories

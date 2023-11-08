@@ -3,7 +3,8 @@ package app
 import (
 	"context"
 
-	category "onlineshopproduct/app/commands/category"
+	categorycommand "onlineshopproduct/app/commands/category"
+	categoryquery "onlineshopproduct/app/queries/category"
 	"onlineshopproduct/infrastructure/adapters"
 )
 
@@ -13,13 +14,16 @@ type Application struct {
 }
 
 func NewApplication(ctx context.Context) Application {
-	repoCategory := adapters.NewCategoryRepository()
+	repoCategory := adapters.NewCategoryRepository(ctx)
 
 	return Application{
 		Commands: Commands{
-			AddCategory: category.NewAddCategoryHandler(repoCategory),
+			AddCategory: categorycommand.NewAddCategoryHandler(repoCategory),
 		},
-		Queries: Queries{},
+		Queries: Queries{
+			GetCategories: categoryquery.NewGetCategoriesHandler(repoCategory),
+			GetCategory:   categoryquery.NewGetCategoryHandler(repoCategory),
+		},
 	}
 }
 
@@ -27,14 +31,14 @@ type Queries struct {
 	//GetProduct  queries.GetBasketHandler
 	//GetProducts queries.GetBasketHandler
 
-	//GetCategory   queries.GetBasketHandler
-	//GetCategories queries.GetBasketHandler
+	GetCategory   categoryquery.GetCategoryHandler
+	GetCategories categoryquery.GetCategoriesHandler
 }
 
 type Commands struct {
-	AddCategory category.AddCategoryHandler
-	//UpdateCategory commands.UpdateBasketHandler
-	//DeleteCategory commands.DeleteBasketHandler
+	AddCategory    categorycommand.AddCategoryHandler
+	UpdateCategory categorycommand.UpdateCategoryHandler
+	DeleteCategory categorycommand.DeleteCategoryHandler
 
 	//AddProduct    commands.UpdateBasketHandler
 	//UpdateProduct commands.UpdateBasketHandler

@@ -15,7 +15,7 @@ type CategoryRepository struct {
 	configuration config.Configuration
 }
 
-func NewCategoryRepository() *CategoryRepository {
+func NewCategoryRepository(ctx context.Context) *CategoryRepository {
 	configuration = config.NewConfiguration()
 
 	db, err := gorm.Open(mysql.Open(configuration.MySql.ConnectionString), &gorm.Config{})
@@ -24,15 +24,19 @@ func NewCategoryRepository() *CategoryRepository {
 		return nil
 	}
 
-	return &CategoryRepository{
+	repo := &CategoryRepository{
 		db:            db,
 		configuration: configuration,
 	}
+
+	repo.Migrate(ctx)
+
+	return repo
+
 }
 
 func (repo *CategoryRepository) Migrate(ctx context.Context) error {
-	m := &domain.Category{}
-	return repo.db.WithContext(ctx).AutoMigrate(&m)
+	return repo.db.WithContext(ctx).AutoMigrate(&domain.Category{})
 }
 
 func (repo *CategoryRepository) GetCategory(ctx context.Context, id int) (domain.Category, error) {
@@ -54,10 +58,19 @@ func (repo *CategoryRepository) AddCategory(ctx context.Context, newCategory dom
 	return err
 }
 
-func (repo *CategoryRepository) UpdateCategory(ctx context.Context, category domain.Category) error {
-	return nil
+func (repo *CategoryRepository) UpdateCategory(ctx context.Context, newCategory domain.Category) error {
+
+	var oldCastegory domain.Category
+	repo.db.WithContext(ctx).First(&oldCastegory)
+	oldCastegory.Name = newCategory.Name
+	err := repo.db.WithContext(ctx).Save(&oldCastegory).Error
+
+	return err
 }
 
 func (repo *CategoryRepository) DeleteCategory(ctx context.Context, id int) error {
-	return nil
+
+	err := repo.db.WithContext(ctx).Delete(&domain.Category{}, id).Error
+
+	return err
 }
