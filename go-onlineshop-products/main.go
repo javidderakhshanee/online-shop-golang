@@ -3,15 +3,16 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/gorilla/mux"
 	"log"
 	"net/http"
 	"onlineshopproduct/app"
+	"onlineshopproduct/healthchecker"
 	controller "onlineshopproduct/interfaces"
-
-	"github.com/gorilla/mux"
 )
 
 func addCategoryController(router *mux.Router, application app.Application) {
+
 	controller := controller.NewCategoryController(application)
 
 	router.HandleFunc("/products/categories", controller.GetCategories).Methods("GET")
@@ -21,13 +22,28 @@ func addCategoryController(router *mux.Router, application app.Application) {
 	router.HandleFunc("/products/category/{id}", controller.DeleteCategory).Methods("DELETE")
 }
 
+func addProductController(router *mux.Router, application app.Application) {
+
+	controller := controller.NewProductController(application)
+
+	router.HandleFunc("/products/{categoryId}", controller.GetProducts).Methods("GET")
+	router.HandleFunc("/products/product/{id}", controller.GetProduct).Methods("GET")
+	router.HandleFunc("/products/product", controller.AddProduct).Methods("POST")
+	router.HandleFunc("/products/product", controller.UpdateProduct).Methods("PUT")
+	router.HandleFunc("/products/product/{id}", controller.DeleteProduct).Methods("DELETE")
+}
+
 func main() {
 
 	router := mux.NewRouter()
 	ctx := context.Background()
 	app := app.NewApplication(ctx)
 
+	healthchecker.AddHealthChecker()
+
 	addCategoryController(router, app)
+
+	addProductController(router, app)
 
 	port := ":8001"
 

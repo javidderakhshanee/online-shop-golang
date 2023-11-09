@@ -8,15 +8,13 @@ import (
 	domain "onlineshopproduct/domain"
 )
 
-var configuration config.Configuration
-
 type CategoryRepository struct {
 	db            *gorm.DB
 	configuration config.Configuration
 }
 
 func NewCategoryRepository(ctx context.Context) *CategoryRepository {
-	configuration = config.NewConfiguration()
+	configuration := config.NewConfiguration()
 
 	db, err := gorm.Open(mysql.Open(configuration.MySql.ConnectionString), &gorm.Config{})
 
@@ -40,7 +38,12 @@ func (repo *CategoryRepository) Migrate(ctx context.Context) error {
 }
 
 func (repo *CategoryRepository) GetCategory(ctx context.Context, id int) (domain.Category, error) {
-	return domain.Category{}, nil
+
+	var category domain.Category
+
+	err := repo.db.WithContext(ctx).First(&category, id).Error
+
+	return category, err
 }
 
 func (repo *CategoryRepository) GetCategories(ctx context.Context) ([]domain.Category, error) {
@@ -60,12 +63,15 @@ func (repo *CategoryRepository) AddCategory(ctx context.Context, newCategory dom
 
 func (repo *CategoryRepository) UpdateCategory(ctx context.Context, newCategory domain.Category) error {
 
-	var oldCastegory domain.Category
-	repo.db.WithContext(ctx).First(&oldCastegory)
-	oldCastegory.Name = newCategory.Name
-	err := repo.db.WithContext(ctx).Save(&oldCastegory).Error
+	oldCategory, err := repo.GetCategory(ctx, newCategory.Id)
+	if err != nil {
+		return err
+	}
 
-	return err
+	oldCategory.Name = newCategory.Name
+	errResult := repo.db.WithContext(ctx).Save(&oldCategory).Error
+
+	return errResult
 }
 
 func (repo *CategoryRepository) DeleteCategory(ctx context.Context, id int) error {

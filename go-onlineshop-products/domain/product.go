@@ -3,11 +3,11 @@ package domain
 import "encoding/json"
 
 type Product struct {
-	Id         int
-	CategoryId int
-	Name       string
-	Discount   int
-	Components []Product
+	Id         int    `json:"id"`
+	CategoryId int    `json:"categoryId"`
+	Name       string `json:"name"`
+	Price      int    `json:"price"`
+	Discount   int    `json:"discount"`
 }
 
 func (b Product) MarshalBinary() ([]byte, error) {

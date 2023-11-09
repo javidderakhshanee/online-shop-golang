@@ -5,6 +5,10 @@ import (
 
 	categorycommand "onlineshopproduct/app/commands/category"
 	categoryquery "onlineshopproduct/app/queries/category"
+
+	productcommand "onlineshopproduct/app/commands/product"
+	productquery "onlineshopproduct/app/queries/product"
+
 	"onlineshopproduct/infrastructure/adapters"
 )
 
@@ -15,24 +19,33 @@ type Application struct {
 
 func NewApplication(ctx context.Context) Application {
 	repoCategory := adapters.NewCategoryRepository(ctx)
+	repoProduct := adapters.NewProductRepository(ctx)
 
 	return Application{
 		Commands: Commands{
-			AddCategory: categorycommand.NewAddCategoryHandler(repoCategory),
+			AddCategory:    categorycommand.NewAddCategoryHandler(repoCategory),
+			UpdateCategory: categorycommand.NewUpdateCategoryHandler(repoCategory),
+			DeleteCategory: categorycommand.NewDeleteCategoryHandler(repoCategory),
+
+			AddProduct:    productcommand.NewAddProductHandler(repoProduct),
+			UpdateProduct: productcommand.NewUpdateProductHandler(repoProduct),
+			DeleteProduct: productcommand.NewDeleteProductHandler(repoProduct),
 		},
 		Queries: Queries{
 			GetCategories: categoryquery.NewGetCategoriesHandler(repoCategory),
 			GetCategory:   categoryquery.NewGetCategoryHandler(repoCategory),
+			GetProducts:   productquery.NewGetProductsHandler(repoProduct),
+			GetProduct:    productquery.NewGetProductHandler(repoProduct),
 		},
 	}
 }
 
 type Queries struct {
-	//GetProduct  queries.GetBasketHandler
-	//GetProducts queries.GetBasketHandler
-
 	GetCategory   categoryquery.GetCategoryHandler
 	GetCategories categoryquery.GetCategoriesHandler
+
+	GetProduct  productquery.GetProductHandler
+	GetProducts productquery.GetProductsHandler
 }
 
 type Commands struct {
@@ -40,7 +53,7 @@ type Commands struct {
 	UpdateCategory categorycommand.UpdateCategoryHandler
 	DeleteCategory categorycommand.DeleteCategoryHandler
 
-	//AddProduct    commands.UpdateBasketHandler
-	//UpdateProduct commands.UpdateBasketHandler
-	//DeleteProduct commands.DeleteBasketHandler
+	AddProduct    productcommand.AddProductHandler
+	UpdateProduct productcommand.UpdateProductHandler
+	DeleteProduct productcommand.DeleteProductHandler
 }
