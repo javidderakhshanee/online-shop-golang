@@ -3,12 +3,14 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/gorilla/mux"
 	"log"
 	"net/http"
 	"onlineshopproduct/app"
 	"onlineshopproduct/healthchecker"
 	controller "onlineshopproduct/interfaces"
+	"os"
+
+	"github.com/gorilla/mux"
 )
 
 func addCategoryController(router *mux.Router, application app.Application) {
@@ -45,11 +47,14 @@ func main() {
 
 	addProductController(router, app)
 
-	port := ":8001"
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8005"
+	}
 
 	fmt.Println("Start listening on port", port)
 
-	if err := http.ListenAndServe(port, router); err != nil {
+	if err := http.ListenAndServe(":"+port, router); err != nil {
 		log.Fatal(err)
 	}
 

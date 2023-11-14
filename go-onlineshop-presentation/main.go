@@ -1,38 +1,34 @@
 package main
 
 import (
-	"html/template"
 	"log"
 	"net/http"
-	//"onlineshopresentation/product"
-	//"strings"
+	helper "onlineshopresentation/global"
+	"onlineshopresentation/product"
+	"os"
 )
 
 func main() {
 
+	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
+
 	http.HandleFunc("/", indexHandler)
 
-	//product.StartHandler()
+	product.StartHandler()
 
-	log.Fatal(http.ListenAndServe("localhost:8086", nil))
-}
+	address := os.Getenv("ADDRESS")
+	if address == "" {
+		address = "localhost:8086"
+	}
 
-var templates = template.Must(template.ParseFiles("templates/header.tmpl", "templates/footer.tmpl", "otherpages/main.html"))
-
-type Index struct {
-	Title string
-	Body  string
-}
-
-func display(w http.ResponseWriter, tmpl string, data interface{}) {
-	templates.ExecuteTemplate(w, tmpl, data)
+	log.Fatal(http.ListenAndServe(address, nil))
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	data := &Index{
+	data := &helper.MasterPageInformation[string]{
 		Title: "Online Shop | Martket Place",
 		Body:  "Welcome to the Online shop.",
 	}
 
-	display(w, "main", data)
+	helper.RunTemplate("otherpages/main.html", "main", data, w)
 }

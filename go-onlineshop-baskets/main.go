@@ -3,12 +3,12 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/gorilla/mux"
 	"log"
 	"net/http"
 	"onlineshopbasket/app"
 	controller "onlineshopbasket/interfaces"
-
-	"github.com/gorilla/mux"
+	"os"
 )
 
 func main() {
@@ -22,11 +22,14 @@ func main() {
 	r.HandleFunc("/baskets/{id}", c.UpdateBasket).Methods("PUT")
 	r.HandleFunc("/baskets/{id}", c.DeleteBasket).Methods("DELETE")
 
-	port := ":9001"
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "9001"
+	}
 
 	fmt.Println("Start listening on port", port)
 
-	if err := http.ListenAndServe(port, r); err != nil {
+	if err := http.ListenAndServe(":"+port, r); err != nil {
 		log.Fatal(err)
 	}
 
