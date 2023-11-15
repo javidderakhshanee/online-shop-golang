@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"onlineshopproduct/app"
-	"onlineshopproduct/healthchecker"
+	app "onlineshopproduct/app"
+	healthchecker "onlineshopproduct/healthchecker"
 	controller "onlineshopproduct/interfaces"
 	"os"
 
@@ -47,7 +47,9 @@ func main() {
 
 	addProductController(router, app)
 
-	port := os.Getenv("PORT")
+	port := os.Getenv("APP_PORT")
+	fmt.Println("Environment port", port)
+
 	if port == "" {
 		port = "8005"
 	}
