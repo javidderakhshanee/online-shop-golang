@@ -13,7 +13,7 @@ GET http://0.0.0.0:8086/ready
 
 ### Category
 
-POST http://localhost:8001/products/category
+POST http://localhost:8080/products/category
 
 {
     "id":5,
@@ -22,17 +22,17 @@ POST http://localhost:8001/products/category
 
 ###
 
-GET http://localhost:8001/products/category/5
+GET http://localhost:8080/products/category/5
 
 
 ###
 
-GET http://localhost:8001/products/categories
+GET http://localhost:8080/products/categories
 
 
 ###
 
-PUT http://localhost:8001/products/category
+PUT http://localhost:8080/products/category
 
 {
     "id":4,
@@ -41,14 +41,14 @@ PUT http://localhost:8001/products/category
 
 ###
 
-DELETE http://localhost:8001/products/category/1
+DELETE http://localhost:8080/products/category/1
 
 
 
 ### Product 
 
 
-POST http://localhost:8001/products/product
+POST http://localhost:8080/products/product
 
 {
     "id":1,
@@ -60,17 +60,17 @@ POST http://localhost:8001/products/product
 
 ###
 
-GET http://localhost:8001/products//product/1
+GET http://localhost:8080/products//product/1
 
 
 ###
 
-GET http://localhost:8001/products/2
+GET http://localhost:8090/products/2
 
 
 ###
 
-PUT http://localhost:8001/products/product
+PUT http://localhost:8080/products/product
 
 {
     "id":1,
@@ -79,6 +79,6 @@ PUT http://localhost:8001/products/product
 
 ###
 
-DELETE http://localhost:8001/products/product/1
+DELETE http://localhost:8080/products/product/1
 
 

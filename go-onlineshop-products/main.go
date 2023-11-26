@@ -47,7 +47,7 @@ func main() {
 
 	addProductController(router, app)
 
-	port := os.Getenv("APP_PORT")
+	port := os.Getenv("API_PORT")
 	fmt.Println("Environment port", port)
 
 	if port == "" {
